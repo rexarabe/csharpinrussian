@@ -1,0 +1,82 @@
+Chapter 01
+
+Hello, C#! Welcome, .NET!
+
+In this first chapter, the goals are setting up your development environment, understanding the similarities and differences betweent .NET Core, .NET Framework, and .NET Standard ,and then creating the simplest application possible with C# and .NET Core using Microsoft's Visual Studio Code. 
+
+After this first chapter, this book can be divided into three parts: 
+first, the grammar and vocabulary of the C# language; second, the types available in .NET Core for building app features; and third, examples, of common corss-platfom apps you can build using C# and .NET. 
+The Last two chapters are about two types of application that can be built with C# but the first is not cross platfom and the second does not use .NET core yet so they should be considred bonus chapters. 
+
+Most people learn complex topics best by imitation and repetition rather than rading a detailed explanation of the theory ; therefore I will not overload you with detiled explanations of every step thoughout this book. 
+The idea is to get you to write some code, build an application from that code, and then for you to see it run. 
+
+You don't need to know all the nitty-gritty details immediately. 
+That will be something that comes with times as you build your own apps and go beyond what any book can teach you. 
+
+In the words of Samuel Johnson, author of the English dictionary in 1755, I have commited "a few wild blunders, and risible absurdities, from which no work of such multiplicity is free."
+I take sole responsibility for these and hope you appreaciate the challenge of my attempt to lash the wind by writing this book about rapidly evolgin techonolies like C# and .NET Core, and the apps that you can build with them. 
+
+This first chapter covers the following topics: 
+*Setting up your development environment 
+*Understanding .NET
+*Building console apps using Visual Studio Code 
+*Downloading solution code from GitHub repository 
+*Looking for help
+
+
+Setting up your development environment 
+Before you start programming, you'll need a code editor for C#. Microsoft has a family of code editors and Integrated Development Environments (IDEs), which include: 
+
+*Visual Studio Code
+*Visual Studio 2019 
+*Visual Studio 2019 for Mac
+
+Using visual Studio Code for cross-platform development 
+The most modern and lightweight code editor to choose, and the only one from Microsoft that is corss-platform, is Microsoft Visual Studio Code. 
+It is able to run on all common operating systems, including Windows, macOS, and many varieties of Linux, including Red Hat Enterprise Linux(RHEL) and Ubuntu.
+
+Visual Studio Code is a good choice for modern cross-platform development because it has an extensive and growing set of extensions to support many languages beyond C#, and being corss-platform and lightweight it can be installed on all platforms that your apps will be deployed to for quick bug fixes and so on. 
+
+Using Visual Studio Code means a developer can use a cross platform code editor to developer cross platform apps. 
+Therefore, I have chosent to use Visual Studio Code for all but the last two chapters for this book, because they need special features not available in Visual Studio Code for building Windows and mobile apps. 
+
+More Information: You can read about Microsoft's plans for Visual Studio Code at the following link: 
+https://github.com/Microsoft/vscode/wiki/Roadmap.
+
+If you prefer to use Visual Studio 2019 or Visual Studio for Mac instead of Visual Studio Code, then of course you can, but I will assume that you are already familiar with how to use them and so I will not give steps by step instructions for using them in this book.
+
+More Information: You can read a comparision of Visual Studio Code and Visual Studio 2019 at the following 
+https://www.itworld.com/article/3403683/visual-studio-code-stepping-on-visual-studios-toes.html.
+
+
+Using Visual Studio 2019 for Windows ap developmen 
+Microsoft Visual Studio 2019 only runs on Windows, version 7 SP1 oor later.
+You must run it on Windows 10 to create Universal Windows Platform (UWP) apps.
+It is the only Microsft developer tool that can create Windows apps, so we will use it in Chapter 20, Building Windwos Desktop Apps. 
+
+Using Visual Studio for Mac for mobile develpment 
+To create apps for the Apple operating systems like iOS to run on devices like iPhone and iPad, you must have Xcode, but that tool only runs on macOS> 
+Although you can use Visual Studio 2019 on Windows with it Xamarin extensions to write cross platform mobile app, you still need macOS and Xcode to compile it. 
+
+So, we will use Visual Studio 2019 for Mac on macOS in Chapter 21, Building Cross Platform Mobile Apps Using Xamarin. Forms.
+
+Recommended tools for chapters 
+To help you to set up the best environment to use in this book, the following table summarizes which tools and operating systems I recommended be used for each of the chapters in this book:
+
+_________________________________________________________________________________
+| Chapter                | Tool                         | Operating Systems     |
+|________________________|______________________________|_______________________|
+|Chapter 1 to 19         | Visual Studio Code           | Windows, MacOS, Linux |
+|________________________|______________________________|_______________________|
+|Chapter 20              | Visual Studio 2019           | Windows 10            |
+|________________________|______________________________|_______________________|
+|Chapter 21              | Visual Studio 2019 for MAC   | macOS                 |
+|________________________|______________________________|_______________________|
+
+To write this book, I used my MacBook Pro and the following listed software:
+* Visual Studio Code on mac macOS as my primary code editor. 
+* Visual Studio Code on Windows 10 in a virtual machine to test OS-specific  behavior like working with the filesystem.
+* Visual Studio 2019 on Windows 10 in a virtual machine to build Windows apps. 
+* Visual Studio 2019 for Mac on macOS to build mobile apps. 
+
