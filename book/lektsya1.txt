@@ -96,4 +96,116 @@ ASP.NET (Active Server pages для .NET)- набор классов для ра
 * ASP.NET Web Forms - инфраструктура для конструирования веб-страниц;
 * ASP.NET MVC  - фреймворк для создания веб-приложений, реализирующий шаблон Модель-Представление-Контроллер (Model-View-Controller),
 * ASP.NET Dynamic Data - платформа создания веб-приложений, управляемых данными; 
-ASP.NET Web Api -=ba
+ASP.NET Web API - инфраструктура для простого взаимодействия между клиентом и сервером, основанная на ASP.NET MVC и использующая контроллеры и маршрутизацию. 
+
+WCF (Windows Communication Foundation) - это многофункциональная коммуникационная технология. 
+С ее помощью можно организовывать взаимодействие как на основе REST, так и на основе SOAP, со всем возможностями, характерными для стандартизированных веб-служб, включая поддержку защиты, транзакций, одно- и двунаправленных коммуникаций, маршутизации, обнаружения и т.п. 
+
+WF (Windows Workflow Foundation) - Инфраструктура, предназначенная для опеределения, выполнения и управления рабочими процессами. 
+WF поддерживает три типа процессов: 
+1) последовательный процесс; 
+2) конечный автомат; 
+3) процесс, управляемый правилами. 
+
+WF(Windows Forms) - набор классов, предназначеный для создания графического интерфейса пользователя (GUI - Graphical User Interface) и являющийся частью Microsoft .NET Framework. 
+Реализует доступ к стандартным элементам интерфейса MS Windows за счет создания обёртки для существующешл Win32 API в управляемом коде. 
+Основан на пиксельной графике. 
+
+WFP( Windows presentation Foundation ) - Новая инфраструктура создания GUI для платформы .NET  Framework, основвнная на векторной графике. 
+При построении приложений инфраструктура WPF опирается на использование XAML (eXtensible Application Markup Language) - расширяемом языке разметки приложений. 
+
+Нативным (естественным, природным) для платформы .NET является специально разработанный в 1998-2001 гг фирмой Microsoft объектно-ориентированный язык C# (C sharp)
+
+Программа "Hello World":
+
+using System; 
+namespace hello
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");
+    }
+  }
+}
+
+4. Языки программирования .NET 
+F# - разработанный в 2005 году мультипарадигменный язык программирования семейства .NET Framework. 
+Он поддерживает как функциональное, так и императивное и объектно-ориентированное программирование. 
+
+Программа "Hello World"
+
+// Learn more about F# at http:/fsharp.org
+
+open System
+
+[<EntryPoint>]
+let main argv = 
+     printfn "Hello World from F#!"
+     0 // return an integer exit code 
+
+Программа вычисления факториала 
+
+// Learn more about F# at http://fsharp.org 
+
+open System 
+
+let rec fac n = 
+    if n < 2 then 1 
+      else n * fac(n-1)
+
+      [<EntryPoint>]
+      let main argv = 
+        let v = fac 5
+        printfn "Значение факториала %d." v
+        0 // return an integer exit code 
+
+Visual Basic .NET - разработанный в 2001 году объектно-ориентированный язык программирования семейства, являющийся развитеием языка Visual Basic. 
+
+Консольная программа 
+"Hello World"
+
+Module Module1
+  Sub Main()
+    Console.WriteLine("Hello, World!")
+  End Sub
+End Module
+
+Программа "Hello World" c GUI 
+
+Private Sub HW()
+Dim helloworld As New Label 
+     With helloworld
+     .Text = "Hello, World"
+     .AutoSize = vbYes
+     .Font = New Font(.Text, 48)
+     .Location = new point(100, 100)
+     .Visible = True
+     End With 
+     Me.Controls.Add(helloworld)
+    End Sub
+
+C++/CLI - развитие языка С++ для среды программирования Microsoft .NET 
+Является частью обзеязыковой инфраструктуры CLI (Common Language Infrastructure), а также дальнейшим развитием Managed C++. 
+РАзработан в 2002 году. 
+
+Программа "Hello World"
+
+#include "pch.h"
+#include <iostream>
+
+using namespace System; 
+
+int main(array<System::String^>^args)
+{
+  std::cound<<"Hello World!" <<std::endl;
+
+  return 0;
+}
+
+JavaScript - мультипарадигменный язык программирования, поддерживающий объектно-ориентированную, императивную и функциональную парадигмы стили. 
+Он используется как встраиваемый язык для программного доступа к объектм приложений (например, как язык сценариев для придания интерактивности веб-страницам).
+Разработан в 1995 году. 
+
+
