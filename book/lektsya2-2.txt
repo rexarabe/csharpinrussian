@@ -399,4 +399,8 @@ while(true)
 1) if (logichesky_operator)
      operator;
 
+2) if (<logical_virazhenye>)
+      operator1;
+      else
+          operator2;
 
