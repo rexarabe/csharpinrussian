@@ -404,3 +404,37 @@ while(true)
       else
           operator2;
 
+
+Оператор выбора является вариантом условного оператора.
+Он имееет следующую форму: 
+
+switch(virazhenya)
+{
+    case <constant>:
+    <operator>;
+    break;
+    case <constant>:
+    <operator>;
+
+    ...
+
+    case <constant_N>:
+    <operator_N>;
+    break
+    default: 
+    <operatorpoumalshanyo>;
+    break;
+}
+
+Операторы цикла реализуют повторное выполнения некоторого оператора или группы операторов. 
+Они бывают четырех видов: 
+
+while(цикл с предусловием)
+do...while()
+for 
+foreach
+
+Цикл while применяется тогда, когда заранее не известно количество итераций. 
+Его синтаксис следующий: 
+
+while()
